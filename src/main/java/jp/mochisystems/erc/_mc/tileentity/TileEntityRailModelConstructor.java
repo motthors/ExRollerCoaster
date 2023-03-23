@@ -7,6 +7,7 @@ import jp.mochisystems.erc._mc._core.ERC;
 import jp.mochisystems.erc._mc.item.ItemRailModelChanger;
 import jp.mochisystems.erc.renderer.rail.ERCBlocksScanner;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;
@@ -81,9 +82,9 @@ public class TileEntityRailModelConstructor extends TileEntityBlocksScannerBase 
     }
 
     @Override
-    public void OnCompleteReceive(NBTTagCompound nbt)
+    public void OnCompleteReceive(NBTTagCompound nbt, EntityPlayer player)
     {
-        super.OnCompleteReceive(nbt);
+        super.OnCompleteReceive(nbt, player);
         NBTTagCompound modelNbt = (NBTTagCompound) nbt.getTag("model");
         widthRatio = modelNbt.getFloat("widthratio");
         heightRatio = modelNbt.getFloat("heightratio");

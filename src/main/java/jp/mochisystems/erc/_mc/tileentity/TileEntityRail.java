@@ -149,7 +149,7 @@ public abstract class TileEntityRail extends TileEntity implements IRailControll
 
 		this.railRenderer = new DefaultRailRenderer(GetBlockStateForTexture());
 		this.railRenderer.SetRail(this.rail);
-//		this.railRenderer.SetDirty();
+		this.railRenderer.SetDirty();
 
 		this.coreRenderer = new RailCoreRenderer(GetBlockStateForTexture());
 		this.coreRenderer.SetDirty();

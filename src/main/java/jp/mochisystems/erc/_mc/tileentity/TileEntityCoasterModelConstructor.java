@@ -8,7 +8,6 @@ import jp.mochisystems.core.math.Quaternion;
 import jp.mochisystems.core.math.Vec3d;
 import jp.mochisystems.core.util.IModel;
 import jp.mochisystems.erc._mc._core.ERC;
-import jp.mochisystems.erc._mc._core.ERC_Logger;
 import jp.mochisystems.erc.coaster.CoasterSettings;
 import jp.mochisystems.erc.loader.ModelPackLoader;
 import jp.mochisystems.erc.rail.Rail;
@@ -20,6 +19,7 @@ import jp.mochisystems.erc.renderer.rail.IRailRenderer;
 import jp.mochisystems.erc.renderer.rail.PackModelRailRenderer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.IBakedModel;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -275,9 +275,9 @@ public class TileEntityCoasterModelConstructor extends TileEntityBlocksScannerBa
 
 
     @Override
-    public void OnCompleteReceive(NBTTagCompound nbt)
+    public void OnCompleteReceive(NBTTagCompound nbt, EntityPlayer player)
     {
-        super.OnCompleteReceive(nbt);
+        super.OnCompleteReceive(nbt, player);
         registerTransformAndSeatData();
         setInventorySlotContents(0, stackSlot);
     }

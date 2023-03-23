@@ -6,10 +6,7 @@ import jp.mochisystems.core.math.Vec3d;
 import jp.mochisystems.erc.rail.Rail;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.BufferBuilder;
 import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.OpenGlHelper;
-import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.client.renderer.vertex.VertexFormat;
@@ -53,15 +50,11 @@ public class DefaultRailRenderer extends CachedBufferBase implements IRailRender
 	}
 
 
-	private final float mu, xu, mv, xv;
+	private final IBlockState textureSource;
 
 	public DefaultRailRenderer(IBlockState textureSource)
     {
-		TextureAtlasSprite icon = Minecraft.getMinecraft().getBlockRendererDispatcher().getBlockModelShapes().getTexture(textureSource);
-		mu = icon.getMinU();
-        xu = icon.getMaxU();
-        mv = icon.getMinV();
-        xv = icon.getMaxV();
+		this.textureSource = textureSource;
 	}
 
     @Override
@@ -79,6 +72,12 @@ public class DefaultRailRenderer extends CachedBufferBase implements IRailRender
 
 	protected void DrawRailModel()
 	{
+		TextureAtlasSprite icon = Minecraft.getMinecraft().getBlockRendererDispatcher().getBlockModelShapes().getTexture(textureSource);
+		float mu = icon.getMinU();
+		float xu = icon.getMaxU();
+		float mv = icon.getMinV();
+		float xv = icon.getMaxV();
+
 		RailCurveModifier modifier = new RailCurveModifier();
 		modifier.SetRail(rail);
 		modifier.UpdateRailData();

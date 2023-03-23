@@ -53,13 +53,13 @@ import java.io.InputStream;
 @IFMLLoadingPlugin.TransformerExclusions
 public class ERC {
 	public static final String MODID = "exrollercoaster";
-	public static final String VERSION = "2.0alpha3";
+	public static final String VERSION = "2.0beta2";
 
 
 	//proxy////////////////////////////////////////
 	@SidedProxy(
-			clientSide = "jp.mochisystems.erc._mc.proxy.ERC_ClientProxy",
-			serverSide = "jp.mochisystems.erc._mc.proxy.ERC_ServerProxy")
+			clientSide = "jp.mochisystems.erc._mc.proxy.ClientProxy",
+			serverSide = "jp.mochisystems.erc._mc.proxy.ServerProxy")
 	public static IProxy proxy;
 
 	//Blocks/////////////////////////////////////////

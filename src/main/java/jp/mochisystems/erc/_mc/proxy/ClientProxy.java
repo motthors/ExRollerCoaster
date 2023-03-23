@@ -15,6 +15,7 @@ import jp.mochisystems.erc._mc.tileentity.TileEntityCoasterModelConstructor;
 import jp.mochisystems.erc._mc.tileentity.TileEntityRail;
 import jp.mochisystems.erc._mc.tileentity.TileEntityRailModelConstructor;
 import jp.mochisystems.erc.loader.ModelPackLoader;
+import jp.mochisystems.erc.renderer.rail.IRailRenderer;
 import jp.mochisystems.erc.sound.CoasterMovingSoundRiding;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -35,7 +36,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ERC_ClientProxy implements IProxy{
+public class ClientProxy implements IProxy{
 
 //	public CoasterCameraController coasterCameraController;
 
@@ -85,6 +86,14 @@ public class ERC_ClientProxy implements IProxy{
 			Minecraft.getMinecraft().getSoundHandler().playSound(new CoasterMovingSoundRiding((EntityPlayer) player, coaster));
 		}
 	}
+
+	@Override
+	public IRailRenderer GetRailRenderer()
+	{
+		return null;
+	}
+
+
 
 
 	@SubscribeEvent
@@ -159,4 +168,6 @@ public class ERC_ClientProxy implements IProxy{
 		ModelPackLoader.Instance.RegisterTexItemModel(event);
 		EntitySUSHI.clientInitSUSHI();
 	}
+
+
 }

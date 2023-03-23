@@ -19,22 +19,21 @@ import net.minecraft.tileentity.TileEntity;
 import javax.annotation.Nonnull;
 
 @SideOnly(Side.CLIENT)
-public class RenderTileEntityRailBase extends TileEntitySpecialRenderer{
+public class RenderTileEntityRailBase extends TileEntitySpecialRenderer<TileEntityRail>{
 
 
 	@Override
-	public void render(@Nonnull TileEntity te, double x, double y, double z, float partialTicks, int destroyStage, float alpha)
+	public void render(@Nonnull TileEntityRail tile, double x, double y, double z, float partialTicks, int destroyStage, float alpha)
 	{
 		this.bindTexture(TextureMap.LOCATION_BLOCKS_TEXTURE);
 		GlStateManager.pushMatrix();
 		GlStateManager.translate(x+0.5, y+0.5, z+0.5);
 
-		TileEntityRail tile = (TileEntityRail)te;
 		tile.Render();
 
-		if(GUIRail.IsEditing(tile.getRail())){
+//		if(GUIRail.IsEditing(tile.getRail())){
 //    		DrawRotaArrow(tile);
-    	}
+//    	}
 
 		GlStateManager.enableCull();
 		GlStateManager.popMatrix();

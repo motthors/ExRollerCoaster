@@ -1,9 +1,10 @@
 package jp.mochisystems.erc._mc.proxy;
 
 import jp.mochisystems.erc._mc.entity.EntityCoaster;
+import jp.mochisystems.erc.renderer.rail.IRailRenderer;
 import net.minecraft.entity.Entity;
 
-public class ERC_ServerProxy implements IProxy{
+public class ServerProxy implements IProxy{
 	
 	@Override
 	public void preInit()
@@ -20,4 +21,10 @@ public class ERC_ServerProxy implements IProxy{
 
 	@Override
 	public void OnRideCoaster(Entity player, EntityCoaster coaster) {}
+
+	@Override
+	public IRailRenderer GetRailRenderer()
+	{
+		return null;
+	}
 }

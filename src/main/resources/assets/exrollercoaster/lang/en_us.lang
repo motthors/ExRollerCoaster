@@ -1,0 +1,50 @@
+tile.Normal Rail.name=Normal Rail
+tile.Accelacation Rail.name=RedStone Powered Rail
+tile.Const Speed Rail.name=ConstVelocity Rail
+tile.Detect Rail.name=Detector Rail
+tile.Branch Rail.name=Branch Rail
+tile.Invisible Rail.name=Invisible Rail
+tile.NoGravity Rail.name=Gravity Rail
+
+tile.RailModelConstructor.name=Rail Model Constructor
+tile.CoasterModelConstructor.name=Coaster Model Constructor
+
+item.RailPipe.name=Rail Pipe
+item.Wrench.name=Connecting Wrench
+
+item.RailChecker.name=Info Viewer
+item.SwitchRailModel.name=Rail Model Switcher
+item.SwitchBlockRailModel.name=Rail Model Switcher
+
+item.BlockPlacer.name=Magical PlaceBlockInTheAir Stick!
+item.ERCSmoothAll.name=Magical AllRailSmoother Stick!
+
+item.Coaster.name=Coaster
+
+item.SUSHI.name=SUSHI
+
+gui.constructor.coaster.mode=Select mode
+gui.constructor.coaster.mode.model=Scan
+gui.constructor.coaster.mode.transform=Transform
+gui.constructor.coaster.mode.seats=Edit seats
+gui.constructor.coaster.mode.engine=Edit Engine
+gui.constructor.coaster.engine=Activate
+
+gui.constructor.coaster.engine.power=Power
+gui.constructor.coaster.engine.notches=Notches
+
+usage.railcheck=Rail information is visible while holding in hand
+usage.railcheck.1=B-Spline control points and generated curve
+usage.railcheck.2=そのポイントでのレールの上方向
+usage.railcheck.3=Rail blocks around
+usage.railcheck.4=Coaster body collider
+usage.railcheck.5=Coaster seat position
+usage.rail=[Usage]\ A rail appears when a block is placed. \ If you continue to place blocks, a smooth curve will be automatically generated. \ The red and green lines that appear when you have an item means whether the next rail you place \ and the rail the line points to will be automatically connected. (Red: Back, Green: Front) \ \ [Advanced Information] "B-Spline" is used to generate rail curves.
+usage.rail.accel=Brakes normally, and accelerates the coaster during RedStone input.
+usage.rail.const=Brakes normally, and moves the coaster at a constant speed while inputting RedStone.
+usage.rail.branch=Switch the rail to operate with redstone input ON/OFF.
+usage.rail.detect=Outputs RedStone power only when the coaster is on the rail.
+usage.rail.invisible=It is a rail that can only be seen when you have a wrench.
+usage.rail.gravity=It is a rail that has no friction and can specify the direction of gravity or set zero gravity.
+usage.wrench=[Usage]\ An item for connecting rails. \ Register the coordinates by right-clicking on the rail block, \ then right-click on another rail block to connect. \ Shift + right click to unregister.
+usage.coaster=Place it by right-clicking on the rail BLOCK.

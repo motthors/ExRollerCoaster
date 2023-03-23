@@ -1,0 +1,6 @@
+{
+  "parent": "exrollercoaster:block/blockrailnormal",
+  "textures": {
+    "all": "blocks/quartz_block_top"
+  }
+}

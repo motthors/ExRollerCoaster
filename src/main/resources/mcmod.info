@@ -1,0 +1,16 @@
+[
+{
+  "modid": "exrollercoaster",
+  "name": "Ex Roller Coaster",
+  "description": "ExRollerCoaster is a vehicle MOD that allows you to build a roller coaster with a 360° smooth curved course.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["tera_motty"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

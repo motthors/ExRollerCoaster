@@ -1,0 +1,50 @@
+tile.Normal Rail.name=基本レール
+tile.Accelacation Rail.name=加速レール
+tile.Const Speed Rail.name=等速レール
+tile.railDetector.name=検知レール
+tile.railBranch.name=分岐レール
+tile.railInvisible.name=透明レール
+tile.NoGravity Rail.name=重力制御レール
+
+tile.RailModelConstructor.name=レールモデル工作台
+tile.CoasterModelConstructor.name=コースターモデル工作台
+
+item.RailPipe.name=レールパイプ
+item.Wrench.name=接続レンチ
+
+item.RailChecker.name=情報ビューワー
+item.SwitchRailModel.name=レールモデル切り替え器
+item.SwitchBlockRailModel.name=レールモデル切り替え器
+
+item.BlockPlacer.name=魔法のブロック空中設置ステッキ！
+item.ERCSmoothAll.name=魔法のレール全部滑らかにしちゃうステッキ！
+
+item.Coaster.name=コースター
+
+item.SUSHI.name=SUSHI
+
+gui.constructor.coaster.mode=モード選択
+gui.constructor.coaster.mode.model=スキャン
+gui.constructor.coaster.mode.transform=ボディ姿勢
+gui.constructor.coaster.mode.seats=シート編集
+gui.constructor.coaster.mode.engine=エンジン設定
+gui.constructor.coaster.engine=エンジン有効化
+
+gui.constructor.coaster.engine.power=出力
+gui.constructor.coaster.engine.notches=加速段階数
+
+usage.railcheck=手に持っている間、レールの情報が見えます。
+usage.railcheck.1=B-Splineのコントロール点と、生成されるカーブ
+usage.railcheck.2=そのポイントでのレールの上方向
+usage.railcheck.3=周辺のレールブロック
+usage.railcheck.4=コースター本体の当たり判定
+usage.railcheck.5=コースターの座席位置
+usage.rail=[使い方]\ ブロックを置くとレールが出現します。\ 続けてブロックを置いていくと、自動で滑らかなカーブが生成されます。\ アイテムを持っていると表示される赤と緑の線は、\ 次に置くレールと線が指すレールとが自動で接続されるかどうかを意味します。（赤：後ろ、緑：前）\ \ [高度な情報]レールの曲線の生成処理は「B-Spline」を採用しています。
+usage.rail.accel=通常時はブレーキ、赤石入力中はコースターを加速させます。
+usage.rail.const=通常時はブレーキ、赤石入力中はコースターを等速移動させます。
+usage.rail.branch=赤石入力ONOFFで、操作するレールを切り替えます。
+usage.rail.detect=コースターがレール上に乗っている時だけ赤石出力します。
+usage.rail.invisible=レンチを持っている時しか見えないレールです。
+usage.rail.gravity=摩擦なし、重力方向を指定もしくは無重力の設定ができるレールです。
+usage.wrench=[使い方]\ レールを接続するためのアイテムです。\ レールブロックの右クリックで座標を登録し、\ 続けて別のレールブロックを右クリックすると接続されます。\ Shift+右クリックで登録解除。
+usage.coaster=レール"ブロック"へ右クリックで設置します。

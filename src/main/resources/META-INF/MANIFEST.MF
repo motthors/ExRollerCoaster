@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+FMLCorePlugin: erc.asm.AsmTransform
+FMLCorePluginContainsFMLMod: erc._mc._1_7_10._core.ERC_Core

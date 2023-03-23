@@ -1,0 +1,7 @@
+{
+  "parent": "exrollercoaster:block/blockrailnormal",
+  "textures": {
+    "all": "blocks/lapis_block"
+
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "exrollercoaster:item/itemblockrailnormal",
+    "textures": {
+        "layer0": "exrollercoaster:blocks/railbranch"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "#up",
+        "up": "exrollercoaster:blocks/coaster_constructor_top",
+        "down": "exrollercoaster:blocks/coaster_constructor_top",
+        "north": "exrollercoaster:blocks/coaster_constructor_back",
+        "south": "exrollercoaster:blocks/coaster_constructor_back",
+        "west": "exrollercoaster:blocks/coaster_constructor_side",
+        "east": "exrollercoaster:blocks/coaster_constructor_side"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "down":  { "texture": "#down", "cullface": "down" },
+                "up":    { "texture": "#up", "cullface": "up", "rotation": 180 },
+                "north": { "texture": "#north", "cullface": "north" },
+                "south": { "texture": "#south", "cullface": "south" },
+                "west":  { "texture": "#west", "cullface": "west" },
+                "east":  { "texture": "#east", "cullface": "east", "uv": [16, 0, 0, 16] }
+            }
+        }
+    ]
+}

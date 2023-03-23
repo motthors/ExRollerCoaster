@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=down":  { "model": "exrollercoaster:coaster_model_constructor" },
+    "facing=up":    { "model": "exrollercoaster:coaster_model_constructor" },
+    "facing=north": { "model": "exrollercoaster:coaster_model_constructor" },
+    "facing=south": { "model": "exrollercoaster:coaster_model_constructor" },
+    "facing=west":  { "model": "exrollercoaster:coaster_model_constructor" },
+    "facing=east":  { "model": "exrollercoaster:coaster_model_constructor" }
+  }
+}

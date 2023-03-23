@@ -1,0 +1,26 @@
+{
+    "IconName":"icon_coaster_d",
+    "ModelNameMain":"coaster_d.obj",
+    "ModelNameConnect": "coaster_d_c.obj",
+    "TextureName":"body_coaster.png",
+    "MainSetting":{
+        "Width":2.0,
+        "Height":2.0,
+        "Weight":1300,
+        "ConnectDistance":1.5,
+        "Seats":[
+            {"LocalPosition":{"x":0.46, "y":0.5, "z":0}, "LocalRotationDegree":{"x":0, "y":0, "z":0}},
+            {"LocalPosition":{"x":-0.46, "y":0.5, "z":0}, "LocalRotationDegree":{"x":0, "y":0, "z":0}}
+        ]
+    },
+    "ConnectSetting":{
+        "Width":2.0,
+        "Height":2.0,
+        "Weight":1300,
+        "ConnectDistance":1.5,
+        "Seats":[
+            {"LocalPosition":{"x":0.46, "y":0.5, "z":0}, "LocalRotationDegree":{"x":0, "y":0, "z":0}},
+            {"LocalPosition":{"x":-0.46, "y":0.5, "z":0}, "LocalRotationDegree":{"x":0, "y":0, "z":0}}
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "IconName":"icon_coaster_inv",
+    "ModelNameMain":"coaster_inv.obj",
+    "TextureName":"body_coaster.png",
+    "MainSetting":{
+        "Width":1.2,
+        "Height":2.0,
+        "Weight":800,
+        "ConnectDistance":1,
+        "Seats":[
+            {"LocalPosition":{"x":0, "y":-1.8, "z":0.6}, "LocalRotationDegree":{"x":0, "y":0, "z":0}}
+        ]
+    }
+}

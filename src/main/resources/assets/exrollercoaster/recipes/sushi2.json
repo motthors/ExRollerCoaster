@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "f",
+    "w"
+  ],
+  "key":
+  {
+    "i":
+    {
+      "item": "minecraft:salmon",
+      "data": 0
+    },
+    "w":
+    {
+      "item": "minecraft:wheat",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "exrollercoaster:ItemSUSHI",
+    "data": 0,
+    "count": 1
+  }
+}

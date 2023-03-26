@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "i",
+    "G",
+    "T"
+  ],
+  "key":
+  {
+    "i":
+    {
+      "item": "minecraft:redstone_torch",
+      "data": 0
+    },
+    "G":
+    {
+      "item": "minecraft:glass",
+      "data": 0
+    },
+    "T":
+    {
+      "item": "minecraft:stone_pressure_plate",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "exrollercoaster:RailChecker",
+    "data": 0,
+    "count": 1
+  }
+}

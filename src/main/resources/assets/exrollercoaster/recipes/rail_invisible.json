@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "i",
+    "c"
+  ],
+  "key":
+  {
+    "i":
+    {
+      "item": "exrollercoaster:itemblockrailnormal",
+      "data": 0
+    },
+    "c":
+    {
+      "item": "minecraft:glass",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "exrollercoaster:itemBlockRailInvisible",
+    "data": 0,
+    "count": 1
+  }
+}

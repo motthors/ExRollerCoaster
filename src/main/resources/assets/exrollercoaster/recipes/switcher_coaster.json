@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " p ",
+    "pRp",
+    " p "
+  ],
+  "key":
+  {
+    "p":
+    {
+      "item": "minecraft:paper",
+      "data": 0
+    },
+    "R":
+    {
+      "item": "exrollercoaster:Coaster",
+      "data": 0
+    }
+  },
+  "result":[
+    {
+      "item": "exrollercoaster:ItemCoasterModel",
+      "data": 0,
+      "count": 1
+    },
+    {
+      "item": "exrollercoaster:Coaster",
+      "data": 0,
+      "count": 1
+    }
+  ]
+}

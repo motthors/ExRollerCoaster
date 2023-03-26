@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " i ",
+    " ii",
+    "i  "
+  ],
+  "key":
+  {
+    "i":
+    {
+      "item": "minecraft:iron_ingot",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "exrollercoaster:Wrench",
+    "data": 0,
+    "count": 1
+  }
+}

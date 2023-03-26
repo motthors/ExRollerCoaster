@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "t",
+    "r"
+  ],
+  "key":
+  {
+    "r":
+    {
+      "item": "exrollercoaster:itemblockrailnormal",
+      "data": 0
+    },
+    "t":
+    {
+      "item": "minecraft:minecart",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "exrollercoaster:Coaster",
+    "data": 0,
+    "count": 1
+  }
+}

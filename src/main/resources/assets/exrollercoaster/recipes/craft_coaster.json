@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "sss",
+    "srs",
+    "sss"
+  ],
+  "key":
+  {
+    "s":
+    {
+      "item": "minecraft:stone",
+      "data": 0
+    },
+    "r":
+    {
+      "item": "exrollercoaster:itemblockrailnormal",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "exrollercoaster:item_constructor_coaster_model",
+    "data": 0,
+    "count": 1
+  }
+}

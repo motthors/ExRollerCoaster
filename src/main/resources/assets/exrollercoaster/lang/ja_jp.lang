@@ -33,6 +33,9 @@ gui.constructor.coaster.engine=エンジン有効化
 gui.constructor.coaster.engine.power=出力
 gui.constructor.coaster.engine.notches=加速段階数
 
+gui.rail.camera=カメラ位置
+
+
 usage.railcheck=手に持っている間、レールの情報が見えます。
 usage.railcheck.1=B-Splineのコントロール点と、生成されるカーブ
 usage.railcheck.2=そのポイントでのレールの上方向

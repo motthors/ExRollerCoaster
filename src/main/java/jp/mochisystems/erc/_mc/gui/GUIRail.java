@@ -140,15 +140,16 @@ public class GUIRail extends GUICanvasGroupControl {
 			case 1: rail.Curve().PositionAt(cameraPoint, 0.5); break;
 			case 2: cameraPoint.CopyFrom(rail.Curve().End); break;
 		}
-		Canvas.Register(1, new GuiToggleButton(0, 0, 10, 50, 15,
+		Canvas.Register(1, new GuiLabel(_Core.I18n("gui.rail.camera"), fontRenderer, 0, 0, -1));
+		Canvas.Register(1, new GuiToggleButton(0, 0, 15, 50, 15,
 				"Start", "Start",
 				() -> cameraMode == 0,
 				isOn -> {cameraMode = 0; cameraPoint.CopyFrom(rail.Curve().Base);} ));
-		Canvas.Register(1, new GuiToggleButton(0, 0, 30, 50, 15,
+		Canvas.Register(1, new GuiToggleButton(0, 0, 35, 50, 15,
 				"Center", "Center",
 				() -> cameraMode == 1,
 				isOn -> {cameraMode = 1; rail.Curve().PositionAt(cameraPoint, 0.5);} ));
-		Canvas.Register(1, new GuiToggleButton(0, 0, 50, 50, 15,
+		Canvas.Register(1, new GuiToggleButton(0, 0, 55, 50, 15,
 				"End", "End",
 				() -> cameraMode == 2,
 				isOn -> {cameraMode = 2; cameraPoint.CopyFrom(rail.Curve().End);} ));

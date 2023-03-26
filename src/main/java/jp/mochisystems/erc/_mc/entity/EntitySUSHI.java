@@ -44,7 +44,7 @@ public class EntitySUSHI extends Entity {
 	@SideOnly(Side.CLIENT)
 	public static void clientInitSUSHI()
 	{
-		tex = new ResourceLocation(ERC.MODID,"textures/entities/check.png");
+		tex = new ResourceLocation(ERC.MODID,"textures/entities/sushi.jpg");
 		try {
 			models = new MeshBuffer[5];
 			String[] ids = {

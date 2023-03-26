@@ -53,7 +53,7 @@ import java.io.InputStream;
 @IFMLLoadingPlugin.TransformerExclusions
 public class ERC {
 	public static final String MODID = "exrollercoaster";
-	public static final String VERSION = "2.0beta2";
+	public static final String VERSION = "2.0beta3";
 
 
 	//proxy////////////////////////////////////////

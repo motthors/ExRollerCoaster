@@ -48,6 +48,7 @@ public class BlockRail extends BlockContainer{
 	public BlockRail()
 	{
 		super(Material.GROUND);
+		this.setHardness(0.2F);
 		setLightOpacity(1);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.DOWN));
 	}
